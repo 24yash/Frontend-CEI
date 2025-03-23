@@ -1,4 +1,4 @@
-# cei-frontend
+# Frontend-CEI
 
 Code from my frontend internship training at CEI America, covering:
 
