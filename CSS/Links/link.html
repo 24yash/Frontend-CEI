@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Links Tutorial</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Basic link styling */
+        a {
+            color: hotpink;
+        }
+
+        /* Link states */
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: hotpink;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        /* Text decoration */
+        .no-underline:link, .no-underline:visited {
+            text-decoration: none;
+        }
+
+        .no-underline:hover, .no-underline:active {
+            text-decoration: underline;
+        }
+
+        /* Background color */
+        .bg-color:link {
+            background-color: yellow;
+        }
+
+        .bg-color:visited {
+            background-color: cyan;
+        }
+
+        .bg-color:hover {
+            background-color: lightgreen;
+        }
+
+        .bg-color:active {
+            background-color: hotpink;
+        }
+
+        /* Link buttons */
+        .button:link, .button:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .button:hover, .button:active {
+            background-color: red;
+        }
+
+        /* More examples */
+        .one:link { color: #ff0000; }
+        .one:visited { color: #0000ff; }
+        .one:hover { color: #ffcc00; }
+
+        .two:link { color: #ff0000; }
+        .two:visited { color: #0000ff; }
+        .two:hover { font-size: 150%; }
+
+        .three:link { color: #ff0000; }
+        .three:visited { color: #0000ff; }
+        .three:hover { background: #66ff66; }
+
+        .four:link { color: #ff0000; }
+        .four:visited { color: #0000ff; }
+        .four:hover { font-family: monospace; }
+
+        .five:link { color: #ff0000; text-decoration: none; }
+        .five:visited { color: #0000ff; text-decoration: none; }
+        .five:hover { text-decoration: underline; }
+
+        /* Cursor examples */
+        .cursor-example span {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Links Tutorial</h1>
+
+    <h2>Basic Link Styling</h2>
+    <p><a href="#">This is a basic styled link</a></p>
+
+    <h2>Link States</h2>
+    <p><a href="#">Hover over me to see different states</a></p>
+
+    <h2>Text Decoration</h2>
+    <p><a href="#" class="no-underline">Link without underline</a></p>
+
+    <h2>Background Color</h2>
+    <p><a href="#" class="bg-color">Link with background color</a></p>
+
+    <h2>Link Buttons</h2>
+    <p><a href="#" class="button">Button Link</a></p>
+
+    <h2>More Examples</h2>
+    <p><a href="#" class="one">Style One</a></p>
+    <p><a href="#" class="two">Style Two</a></p>
+    <p><a href="#" class="three">Style Three</a></p>
+    <p><a href="#" class="four">Style Four</a></p>
+    <p><a href="#" class="five">Style Five</a></p>
+
+    <h2>Cursor Examples</h2>
+    <div class="cursor-example">
+        <span style="cursor: auto">auto</span>
+        <span style="cursor: crosshair">crosshair</span>
+        <span style="cursor: default">default</span>
+        <span style="cursor: e-resize">e-resize</span>
+        <span style="cursor: help">help</span>
+        <span style="cursor: move">move</span>
+        <span style="cursor: pointer">pointer</span>
+        <span style="cursor: text">text</span>
+        <span style="cursor: wait">wait</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Form Styling Tutorial</title>
+    <style>
+        /* Basic input styling */
+        input {
+            width: 100%;
+        }
+
+        /* Padded inputs */
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        /* Bordered inputs */
+        .bordered-input {
+            border: 2px solid red;
+            border-radius: 4px;
+        }
+
+        .bottom-border-input {
+            border: none;
+            border-bottom: 2px solid red;
+        }
+
+        /* Colored inputs */
+        .colored-input {
+            background-color: #3CBC8D;
+            color: white;
+        }
+
+        /* Focused inputs */
+        input[type=text]:focus {
+            background-color: lightblue;
+        }
+
+        .focus-border:focus {
+            border: 3px solid #555;
+        }
+
+        /* Input with icon */
+        .icon-input {
+            background-color: white;
+            background-image: url('searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding-left: 40px;
+        }
+
+        /* Animated search input */
+        .animated-input {
+            width: 130px;
+            transition: width 0.4s ease-in-out;
+        }
+
+        .animated-input:focus {
+            width: 100%;
+        }
+
+        /* Styling textareas */
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            resize: none;
+        }
+
+        /* Styling select menus */
+        select {
+            width: 100%;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #f1f1f1;
+        }
+
+        /* Styling input buttons */
+        input[type=button], input[type=submit], input[type=reset] {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        /* Responsive form */
+        @media screen and (max-width: 600px) {
+            .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Form Styling Tutorial</h1>
+
+    <h2>Basic Input</h2>
+    <input type="text" placeholder="Basic input">
+
+    <h2>Padded Input</h2>
+    <input type="text" placeholder="Padded input">
+
+    <h2>Bordered Inputs</h2>
+    <input type="text" class="bordered-input" placeholder="Bordered input">
+    <input type="text" class="bottom-border-input" placeholder="Bottom border input">
+
+    <h2>Colored Input</h2>
+    <input type="text" class="colored-input" placeholder="Colored input">
+
+    <h2>Focused Inputs</h2>
+    <input type="text" placeholder="Focus me for light blue background">
+    <input type="text" class="focus-border" placeholder="Focus me for border change">
+
+    <h2>Input with Icon</h2>
+    <input type="text" class="icon-input" placeholder="Input with icon">
+
+    <h2>Animated Search Input</h2>
+    <input type="text" class="animated-input" placeholder="Search..">
+
+    <h2>Textarea</h2>
+    <textarea placeholder="Enter text here..."></textarea>
+
+    <h2>Select Menu</h2>
+    <select>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+
+    <h2>Input Buttons</h2>
+    <input type="button" value="Button">
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</body>
+</html>

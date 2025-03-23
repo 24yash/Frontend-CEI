@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Media Notes</title>
+</head>
+<body>
+    <!-- 1. HTML Video Element -->
+    <section>
+        <h2>Video Element</h2>
+        <video width="320" height="240" controls muted poster="preview.jpg">
+            <!-- Multiple sources for browser compatibility -->
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.webm" type="video/webm">
+            <!-- Fallback text for unsupported browsers -->
+            Your browser does not support the video tag.
+        </video>
+        <!-- 
+            Attributes:
+            - controls: Shows play/pause controls
+            - autoplay: Auto-start (needs muted in modern browsers)
+            - loop: Loops playback
+            - poster: Preview image 
+        -->
+    </section>
+
+    <!-- 2. HTML Audio Element -->
+    <section>
+        <h2>Audio Element</h2>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            <source src="audio.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- 
+            Attributes:
+            - preload: "none|metadata|auto"
+            - crossorigin: For CORS requests
+        -->
+    </section>
+
+    <!-- 3. Media Attribute Usage -->
+    <section>
+        <h2>Media Attributes</h2>
+        <!-- Link with media query -->
+        <link rel="stylesheet" media="(max-width: 600px)" href="mobile.css">
+        
+        <!-- Style block for print -->
+        <style media="print">
+            body { font-size: 12pt; }
+        </style>
+
+        <!-- Source element with media query -->
+        <picture>
+            <source media="(min-width: 800px)" srcset="large.jpg">
+            <img src="small.jpg" alt="Responsive image">
+        </picture>
+    </section>
+
+    <!-- 4. Track Element for Subtitles -->
+    <section>
+        <h2>Subtitles & Captions</h2>
+        <video controls>
+            <source src="movie.mp4" type="video/mp4">
+            <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+            <track src="subtitles_es.vtt" kind="subtitles" srclang="es" label="Spanish">
+        </video>
+        <!-- 
+            Track attributes:
+            - kind: subtitles|captions|descriptions|chapters|metadata
+            - default: marks default track 
+        -->
+    </section>
+
+    <!-- 5. Responsive Video Embed -->
+    <section>
+        <h2>Responsive Video</h2>
+        <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+            <iframe style="position: absolute; top:0; left:0; width:100%; height:100%;" 
+                    src="https://www.youtube.com/embed/..." 
+                    frameborder="0" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+        <!-- 16:9 aspect ratio (9/16=56.25%) -->
+    </section>
+
+    <!-- 6. Media Queries in HTML -->
+    <section>
+        <h2>Media Query Usage</h2>
+        <a href="print.html" media="print and (resolution: 300dpi)">Print Version</a>
+        
+        <!-- Source element with media query -->
+        <picture>
+            <source srcset="landscape.jpg" media="(orientation: landscape)">
+            <source srcset="portrait.jpg" media="(orientation: portrait)">
+            <img src="default.jpg" alt="Adaptive image">
+        </picture>
+    </section>
+
+    <!-- 7. Media Playback Control -->
+    <script>
+        const vid = document.querySelector('video');
+        // Basic media control methods:
+        vid.play();    // Start playback
+        vid.pause();   // Pause playback
+        vid.load();    // Reload media
+        vid.canPlayType('video/mp4'); // Check format support
+    </script>
+</body>
+</html>

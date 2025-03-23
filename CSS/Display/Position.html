@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Tutorial</title>
+    <style>
+        /* Static positioning (default) */
+        .static {
+            position: static;
+            border: 3px solid #73AD21;
+        }
+
+        /* Relative positioning */
+        .relative {
+            position: relative;
+            left: 30px;
+            border: 3px solid #73AD21;
+        }
+
+        /* Fixed positioning */
+        .fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid #73AD21;
+        }
+
+        /* Absolute positioning */
+        .container {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid #73AD21;
+        }
+        .absolute {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid #73AD21;
+        }
+
+        /* Sticky positioning */
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: green;
+            border: 2px solid #4CAF50;
+        }
+
+        /* Positioning text in an image */
+        .image-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        .top-left {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+        }
+        .top-right {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+        }
+        .bottom-left {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+        }
+        .bottom-right {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Positioning Tutorial</h1>
+
+    <h2>Static Positioning</h2>
+    <div class="static">This is a static positioned element.</div>
+
+    <h2>Relative Positioning</h2>
+    <div class="relative">This is a relatively positioned element.</div>
+
+    <h2>Fixed Positioning</h2>
+    <div class="fixed">This is a fixed positioned element.</div>
+
+    <h2>Absolute Positioning</h2>
+    <div class="container">
+        <div class="absolute">This is an absolutely positioned element.</div>
+    </div>
+
+    <h2>Sticky Positioning</h2>
+    <div class="sticky">This is a sticky positioned element.</div>
+
+    <h2>Positioning Text in an Image</h2>
+    <div class="image-container">
+        <img src="https://example.com/image.jpg" alt="Sample Image">
+        <div class="top-left">Top Left</div>
+        <div class="top-right">Top Right</div>
+        <div class="bottom-left">Bottom Left</div>
+        <div class="bottom-right">Bottom Right</div>
+        <div class="centered">Centered</div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Tutorial</title>
+    <style>
+        /* Static positioning (default) */
+        .static {
+            position: static;
+            border: 3px solid #73AD21;
+        }
+
+        /* Relative positioning */
+        .relative {
+            position: relative;
+            left: 30px;
+            border: 3px solid #73AD21;
+        }
+
+        /* Fixed positioning */
+        .fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid #73AD21;
+        }
+
+        /* Absolute positioning */
+        .container {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid #73AD21;
+        }
+        .absolute {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid #73AD21;
+        }
+
+        /* Sticky positioning */
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: green;
+            border: 2px solid #4CAF50;
+        }
+
+        /* Positioning text in an image */
+        .image-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        .top-left {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+        }
+        .top-right {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+        }
+        .bottom-left {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+        }
+        .bottom-right {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Positioning Tutorial</h1>
+
+    <h2>Static Positioning</h2>
+    <div class="static">This is a static positioned element.</div>
+
+    <h2>Relative Positioning</h2>
+    <div class="relative">This is a relatively positioned element.</div>
+
+    <h2>Fixed Positioning</h2>
+    <div class="fixed">This is a fixed positioned element.</div>
+
+    <h2>Absolute Positioning</h2>
+    <div class="container">
+        <div class="absolute">This is an absolutely positioned element.</div>
+    </div>
+
+    <h2>Sticky Positioning</h2>
+    <div class="sticky">This is a sticky positioned element.</div>
+
+    <h2>Positioning Text in an Image</h2>
+    <div class="image-container">
+        <img src="https://example.com/image.jpg" alt="Sample Image">
+        <div class="top-left">Top Left</div>
+        <div class="top-right">Top Right</div>
+        <div class="bottom-left">Bottom Left</div>
+        <div class="bottom-right">Bottom Right</div>
+        <div class="centered">Centered</div>
+    </div>
+</body>
+</html>

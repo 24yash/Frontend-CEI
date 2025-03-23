@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Block and Inline Elements</title>
+    <style>
+        /* Styling for demonstration purposes */
+        .block-demo {
+            background-color: #f0f0f0;
+            border: 1px solid #999;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        .inline-demo {
+            background-color: #e0e0e0;
+            border: 1px solid #999;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Block and Inline Elements</h1>
+
+    <!-- Block-level Elements -->
+    <h2>Block-level Elements</h2>
+    <p class="block-demo">This is a paragraph. It's a block-level element.</p>
+    <div class="block-demo">This is a div. It's also a block-level element.</div>
+
+    <!-- Inline Elements -->
+    <h2>Inline Elements</h2>
+    <p>This is a paragraph with an <span class="inline-demo">inline span element</span> inside it.</p>
+
+    <!-- div Element -->
+    <h2>The div Element</h2>
+    <div style="background-color:black;color:white;padding:20px;">
+        <h3>London</h3>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    </div>
+
+    <!-- span Element -->
+    <h2>The span Element</h2>
+    <p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+
+    <!-- Nesting -->
+    <h2>Nesting Elements</h2>
+    <div class="block-demo">
+        This is a block-level div containing 
+        <p>a block-level paragraph with an <span class="inline-demo">inline span</span> inside it.</p>
+    </div>
+</body>
+</html>

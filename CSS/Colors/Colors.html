@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Colors Tutorial</title>
+    <style>
+        /* Basic Color Names */
+        .color-names {
+            background-color: DodgerBlue;
+            color: White;
+            border: 3px solid Tomato;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        /* RGB Color Values */
+        .rgb-example {
+            background-color: rgb(255, 99, 71); /* Tomato */
+            color: rgb(255, 255, 255); /* White */
+        }
+
+        /* RGBA (RGB with Alpha) */
+        .rgba-example {
+            background-color: rgba(255, 99, 71, 0.5); /* 50% opaque Tomato */
+        }
+
+        /* HEX Color Values */
+        .hex-example {
+            background-color: #ff6347; /* Tomato in HEX */
+            color: #ffffff; /* White in HEX */
+        }
+
+        /* 3-digit HEX Shorthand */
+        .short-hex {
+            background-color: #f0f; /* #ff00ff */
+            color: #0f0; /* #00ff00 */
+        }
+
+        /* HSL Color Values */
+        .hsl-example {
+            background-color: hsl(9, 100%, 64%); /* Tomato in HSL */
+        }
+
+        /* HSLA (HSL with Alpha) */
+        .hsla-example {
+            background-color: hsla(9, 100%, 64%, 0.3); /* 30% opaque Tomato */
+        }
+
+        /* Border Colors */
+        .border-demo {
+            border: 2px solid hsl(120, 100%, 25%); /* Dark green border */
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* Text Shadows using RGBA */
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Gradients using color stops */
+        .gradient-box {
+            background: linear-gradient(
+                to right,
+                rgba(255,0,0,0.8), /* Red with 80% opacity */
+                #00ff00,          /* Green */
+                hsl(240, 100%, 50%) /* Blue */
+            );
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="color-names">
+        <h2>Color Names Example</h2>
+        <p>Using predefined color names (140 supported)</p>
+    </div>
+
+    <div class="rgb-example">
+        <h3>RGB Values</h3>
+        <p>RGB(255, 99, 71) represents Tomato</p>
+    </div>
+
+    <div class="rgba-example">
+        <h3>RGBA Transparency</h3>
+        <p>50% opaque Tomato using RGBA</p>
+    </div>
+
+    <div class="hex-example">
+        <h3>HEX Values</h3>
+        <p>#ff6347 (Tomato) with #ffffff (White) text</p>
+    </div>
+
+    <div class="short-hex">
+        <h3>3-digit HEX Shorthand</h3>
+        <p>#f0f expands to #ff00ff (Magenta)</p>
+    </div>
+
+    <div class="hsl-example">
+        <h3>HSL Values</h3>
+        <p>hsl(9, 100%, 64%) represents Tomato</p>
+    </div>
+
+    <div class="hsla-example">
+        <h3>HSLA Transparency</h3>
+        <p>30% opaque Tomato using HSLA</p>
+    </div>
+
+    <div class="border-demo">
+        <h3 class="text-shadow">Border Colors</h3>
+        <p>Dark green border using HSL values</p>
+    </div>
+
+    <div class="gradient-box">
+        <p>Gradient combining RGBA, HEX, and HSL</p>
+    </div>
+
+    <!-- Color Value Comparison Table -->
+    <table>
+        <tr>
+            <th>Color Type</th>
+            <th>Tomato Equivalent</th>
+            <th>Transparent Version</th>
+        </tr>
+        <tr>
+            <td>Color Name</td>
+            <td>Tomato</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>RGB</td>
+            <td>rgb(255, 99, 71)</td>
+            <td>rgba(255, 99, 71, 0.5)</td>
+        </tr>
+        <tr>
+            <td>HEX</td>
+            <td>#ff6347</td>
+            <td>#ff634780</td>
+        </tr>
+        <tr>
+            <td>HSL</td>
+            <td>hsl(9°, 100%, 64%)</td>
+            <td>hsla(9°, 100%, 64%, 0.5)</td>
+        </tr>
+    </table>
+</body>
+</html>

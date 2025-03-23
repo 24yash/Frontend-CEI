@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animations Tutorial</title>
+    <style>
+      /* Basic styles */
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+      text
+        /* Animation container */
+        .animation-container {
+        text-align: center;
+      }
+
+      /* Simple color change animation */
+      @keyframes colorChange {
+        0% {
+          background-color: red;
+        }
+        25% {
+          background-color: yellow;
+        }
+        50% {
+          background-color: blue;
+        }
+        100% {
+          background-color: green;
+        }
+      }
+
+      .color-change {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: colorChange;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+
+      /* Move and color change animation */
+      @keyframes moveAndChange {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      .move-and-change {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: moveAndChange;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+      }
+
+      /* Delayed animation */
+      .delayed {
+        width: 100px;
+        height: 100px;
+        background-color: purple;
+        animation: colorChange 4s 2s infinite;
+      }
+
+      /* Animation with fill mode */
+      @keyframes grow {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(1.5);
+        }
+      }
+
+      .fill-mode {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        animation: grow 3s forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animation-container">
+      <h1>CSS Animations</h1>
+      text
+      <h2>Color Change Animation</h2>
+      <div class="color-change"></div>
+
+      <h2>Move and Color Change Animation</h2>
+      <div class="move-and-change"></div>
+
+      <h2>Delayed Animation</h2>
+      <div class="delayed"></div>
+
+      <h2>Animation with Fill Mode</h2>
+      <div class="fill-mode"></div>
+    </div>
+  </body>
+</html>

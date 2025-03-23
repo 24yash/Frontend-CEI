@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Font Pairings and Shorthand</title>
+    <style>
+        /* Font Pairing Examples */
+        .georgia-verdana {
+            font-family: Georgia, serif;
+        }
+        .georgia-verdana p {
+            font-family: Verdana, sans-serif;
+        }
+
+        .helvetica-garamond {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        .helvetica-garamond p {
+            font-family: Garamond, serif;
+        }
+
+        /* Google Font Pairings */
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&family=Ubuntu&family=Lora&family=Abril+Fatface&family=Poppins&family=Cinzel&family=Fauna+One&family=Fjalla+One&family=Libre+Baskerville&family=Space+Mono&family=Muli&family=Spectral&family=Rubik&family=Oswald&family=Noto+Sans&display=swap');
+
+        .merriweather-opensans {
+            font-family: 'Merriweather', serif;
+        }
+        .merriweather-opensans p {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* Font Shorthand Examples */
+        .font-shorthand-1 {
+            font: 20px Arial, sans-serif;
+        }
+        .font-shorthand-2 {
+            font: italic small-caps bold 12px/30px Georgia, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Font Pairings and Shorthand</h1>
+
+    <h2>Classic Font Pairings</h2>
+    <div class="georgia-verdana">
+        <h3>Georgia and Verdana</h3>
+        <p>This paragraph uses Verdana font.</p>
+    </div>
+
+    <div class="helvetica-garamond">
+        <h3>Helvetica and Garamond</h3>
+        <p>This paragraph uses Garamond font.</p>
+    </div>
+
+    <h2>Google Font Pairings</h2>
+    <div class="merriweather-opensans">
+        <h3>Merriweather and Open Sans</h3>
+        <p>This paragraph uses Open Sans font.</p>
+    </div>
+
+    <h2>Font Shorthand Property</h2>
+    <p class="font-shorthand-1">This text uses font shorthand: 20px Arial, sans-serif.</p>
+    <p class="font-shorthand-2">This text uses complex font shorthand: italic small-caps bold 12px/30px Georgia, serif.</p>
+</body>
+</html>

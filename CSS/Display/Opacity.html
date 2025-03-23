@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Opacity/Transparency Tutorial</title>
+    <style>
+        /* Basic opacity example */
+        .transparent-image {
+            opacity: 0.5; /* 50% opacity */
+        }
+
+        /* Hover effect */
+        .hover-effect {
+            opacity: 0.5;
+        }
+        .hover-effect:hover {
+            opacity: 1.0;
+        }
+
+        /* Reversed hover effect */
+        .reversed-hover {
+            opacity: 1.0;
+        }
+        .reversed-hover:hover {
+            opacity: 0.5;
+        }
+
+        /* Transparent box */
+        .transparent-box {
+            background-color: #4CAF50;
+            opacity: 0.3;
+            padding: 20px;
+            color: black;
+        }
+
+        /* Transparency using RGBA */
+        .rgba-box {
+            background: rgba(76, 175, 80, 0.3); /* Green background with 30% opacity */
+            padding: 20px;
+            color: black;
+        }
+
+        /* Text in transparent box */
+        .background {
+            background: url('https://www.w3schools.com/css/img_forest.jpg') repeat;
+            border: 2px solid black;
+            padding: 20px;
+        }
+        .transbox {
+            margin: 30px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.6;
+        }
+        .transbox p {
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Opacity/Transparency Tutorial</h1>
+
+    <h2>Basic Opacity</h2>
+    <img src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" class="transparent-image" width="170" height="100">
+
+    <h2>Hover Effect</h2>
+    <img src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" class="hover-effect" width="170" height="100">
+
+    <h2>Reversed Hover Effect</h2>
+    <img src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" class="reversed-hover" width="170" height="100">
+
+    <h2>Transparent Box</h2>
+    <div class="transparent-box">
+        <p>This is a transparent box. The text inside also becomes transparent.</p>
+    </div>
+
+    <h2>Transparency using RGBA</h2>
+    <div class="rgba-box">
+        <p>This box uses RGBA for background transparency. The text remains opaque.</p>
+    </div>
+
+    <h2>Text in Transparent Box</h2>
+    <div class="background">
+        <div class="transbox">
+            <p>This is some text that is placed in the transparent box.</p>
+        </div>
+    </div>
+</body>
+</html>

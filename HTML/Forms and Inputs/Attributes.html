@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Attributes Tutorial</title>
+</head>
+<body>
+    <h1>HTML Form Attributes</h1>
+
+    <!-- Basic form with various attributes -->
+    <form action="/action_page.php" method="post" target="_blank" autocomplete="on" novalidate>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Explanation of Form Attributes:</h2>
+    <ul>
+        <li><strong>action:</strong> Specifies where to send form data when submitted (e.g., "/action_page.php")</li>
+        <li><strong>method:</strong> Defines HTTP method for submitting form data (GET or POST)</li>
+        <li><strong>target:</strong> Determines where to display the response after submission (_blank, _self, _parent, _top, or framename)</li>
+        <li><strong>autocomplete:</strong> Enables/disables browser's autocomplete functionality</li>
+        <li><strong>novalidate:</strong> Specifies that form input should not be validated on submission</li>
+    </ul>
+
+    <h2>Additional Form Attributes:</h2>
+    <ul>
+        <li><strong>accept-charset:</strong> Specifies character encodings for form submission</li>
+        <li><strong>enctype:</strong> Defines how form data should be encoded (for method="post")</li>
+        <li><strong>name:</strong> Assigns a name to the form</li>
+        <li><strong>rel:</strong> Specifies the relationship between linked resource and current document</li>
+    </ul>
+
+    <h2>Notes on GET vs POST methods:</h2>
+    <h3>GET:</h3>
+    <ul>
+        <li>Appends form data to URL in name/value pairs</li>
+        <li>Not secure for sensitive data (visible in URL)</li>
+        <li>Limited URL length (2048 characters)</li>
+        <li>Useful for bookmarkable form submissions</li>
+        <li>Suitable for non-secure data like search queries</li>
+    </ul>
+
+    <h3>POST:</h3>
+    <ul>
+        <li>Sends form data in the body of the HTTP request</li>
+        <li>More secure (data not visible in URL)</li>
+        <li>No size limitations</li>
+        <li>Cannot be bookmarked</li>
+        <li>Recommended for sensitive or personal information</li>
+    </ul>
+</body>
+</html>

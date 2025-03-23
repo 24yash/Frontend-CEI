@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Image Sprites Tutorial</title>
+    <style>
+        /* Image Sprites - Simple Example */
+        #home {
+            width: 46px;
+            height: 44px;
+            background: url(img_navsprites.gif) 0 0;
+        }
+
+        /* Image Sprites - Navigation List */
+        #navlist {
+            position: relative;
+        }
+        #navlist li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+            top: 0;
+        }
+        #navlist li, #navlist a {
+            height: 44px;
+            display: block;
+        }
+        #home {
+            left: 0px;
+            width: 46px;
+            background: url('img_navsprites.gif') 0 0;
+        }
+        #prev {
+            left: 63px;
+            width: 43px;
+            background: url('img_navsprites.gif') -47px 0;
+        }
+        #next {
+            left: 129px;
+            width: 43px;
+            background: url('img_navsprites.gif') -91px 0;
+        }
+
+        /* Image Sprites - Hover Effect */
+        #home a:hover {
+            background: url('img_navsprites_hover.gif') 0 -45px;
+        }
+        #prev a:hover {
+            background: url('img_navsprites_hover.gif') -47px -45px;
+        }
+        #next a:hover {
+            background: url('img_navsprites_hover.gif') -91px -45px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Image Sprites Tutorial</h1>
+
+    <h2>Simple Example</h2>
+    <!-- Simple sprite example -->
+    <img id="home" src="img_trans.gif" alt="Home">
+
+    <h2>Navigation List</h2>
+    <!-- Navigation list using sprites -->
+    <ul id="navlist">
+        <li id="home"><a href="#"></a></li>
+        <li id="prev"><a href="#"></a></li>
+        <li id="next"><a href="#"></a></li>
+    </ul>
+
+    <h2>Hover Effect</h2>
+    <p>Hover over the navigation items to see the effect.</p>
+</body>
+</html>

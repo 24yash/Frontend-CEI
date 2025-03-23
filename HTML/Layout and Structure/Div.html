@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Div Element Tutorial</title>
+    <style>
+        /* Styling for demonstration purposes */
+        .center-div {
+            width: 300px;
+            margin: auto;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .float-container {
+            width: 100%;
+            overflow: auto;
+        }
+        .float-div {
+            width: 33%;
+            float: left;
+            border: 1px solid black;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .inline-block-div {
+            width: 30%;
+            display: inline-block;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+        }
+        .flex-container {
+            display: flex;
+        }
+        .flex-div {
+            width: 33%;
+            border: 1px solid black;
+            padding: 10px;
+            /* margin: 5px; */
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+        .grid-div {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Div Element Tutorial</h1>
+
+    <!-- Basic div usage -->
+    <h2>Basic Div Usage</h2>
+    <p>Lorem Ipsum <div style="border: 1px solid black; padding: 5px;">I am a div</div> dolor sit amet.</p>
+
+    <!-- Div as a container -->
+    <h2>Div as a Container</h2>
+    <div style="border: 1px solid black; padding: 10px;">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+        <p>London has over 9 million inhabitants.</p>
+    </div>
+
+    <!-- Center-aligned div -->
+    <h2>Center-aligned Div</h2>
+    <div class="center-div">
+        <h3>Centered Div</h3>
+        <p>This div is centered using margin: auto;</p>
+    </div>
+
+    <!-- Multiple divs -->
+    <h2>Multiple Divs</h2>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 10px;">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+    </div>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 10px;">
+        <h3>Oslo</h3>
+        <p>Oslo is the capital city of Norway.</p>
+    </div>
+    <div style="border: 1px solid black; padding: 10px;">
+        <h3>Rome</h3>
+        <p>Rome is the capital city of Italy.</p>
+    </div>
+
+    <!-- Aligning divs side by side using float -->
+    <h2>Aligning Divs Side by Side (Float)</h2>
+    <div class="float-container">
+        <div class="float-div">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+        </div>
+        <div class="float-div">
+            <h3>Oslo</h3>
+            <p>Oslo is the capital city of Norway.</p>
+        </div>
+        <div class="float-div">
+            <h3>Rome</h3>
+            <p>Rome is the capital city of Italy.</p>
+        </div>
+    </div>
+
+    <!-- Aligning divs side by side using inline-block -->
+    <h2>Aligning Divs Side by Side (Inline-block)</h2>
+    <div>
+        <div class="inline-block-div">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+        </div>
+        <div class="inline-block-div">
+            <h3>Oslo</h3>
+            <p>Oslo is the capital city of Norway.</p>
+        </div>
+        <div class="inline-block-div">
+            <h3>Rome</h3>
+            <p>Rome is the capital city of Italy.</p>
+        </div>
+    </div>
+
+    <!-- Aligning divs side by side using flex -->
+    <h2>Aligning Divs Side by Side (Flex)</h2>
+    <div class="flex-container">
+        <div class="flex-div">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+        </div>
+        <div class="flex-div">
+            <h3>Oslo</h3>
+            <p>Oslo is the capital city of Norway.</p>
+        </div>
+        <div class="flex-div">
+            <h3>Rome</h3>
+            <p>Rome is the capital city of Italy.</p>
+        </div>
+    </div>
+
+    <!-- Aligning divs side by side using grid -->
+    <h2>Aligning Divs Side by Side (Grid)</h2>
+    <div class="grid-container">
+        <div class="grid-div">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+        </div>
+        <div class="grid-div">
+            <h3>Oslo</h3>
+            <p>Oslo is the capital city of Norway.</p>
+        </div>
+        <div class="grid-div">
+            <h3>Rome</h3>
+            <p>Rome is the capital city of Italy.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dropdowns Tutorial</title>
+    <style>
+        /* Basic Dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Dropdown Menu */
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdown-menu {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-menu-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-menu-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-menu-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown-menu:hover .dropdown-menu-content {
+            display: block;
+        }
+        .dropdown-menu:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        /* Right-aligned Dropdown */
+        .right-aligned .dropdown-content {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Dropdowns Tutorial</h1>
+
+    <h2>Basic Dropdown</h2>
+    <div class="dropdown">
+        <span>Mouse over me</span>
+        <div class="dropdown-content">
+            <p>Hello World!</p>
+        </div>
+    </div>
+
+    <h2>Dropdown Menu</h2>
+    <div class="dropdown-menu">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-menu-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+
+    <h2>Right-aligned Dropdown</h2>
+    <div class="dropdown right-aligned" style="float: right;">
+        <span>Right-aligned Dropdown</span>
+        <div class="dropdown-content">
+            <p>This dropdown is aligned to the right.</p>
+        </div>
+    </div>
+</body>
+</html>

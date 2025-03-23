@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Padding Tutorial</title>
+    <style>
+        /* Basic Padding */
+        .padding-example {
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #333;
+            margin-bottom: 20px;
+        }
+
+        /* Individual Sides Padding */
+        .individual-padding {
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+            background-color: #e0e0e0;
+            border: 1px solid #333;
+            margin-bottom: 20px;
+        }
+
+        /* Shorthand Property */
+        .shorthand-four {
+            padding: 5px 10px 15px 20px; /* top right bottom left */
+            background-color: #d0d0d0;
+            border: 1px solid #333;
+            margin-bottom: 10px;
+        }
+
+        .shorthand-three {
+            padding: 5px 10px 15px; /* top right/left bottom */
+            background-color: #d0d0d0;
+            border: 1px solid #333;
+            margin-bottom: 10px;
+        }
+
+        .shorthand-two {
+            padding: 5px 10px; /* top/bottom right/left */
+            background-color: #d0d0d0;
+            border: 1px solid #333;
+            margin-bottom: 10px;
+        }
+
+        .shorthand-one {
+            padding: 5px; /* all sides */
+            background-color: #d0d0d0;
+            border: 1px solid #333;
+            margin-bottom: 20px;
+        }
+
+        /* Padding and Element Width */
+        .width-example {
+            width: 300px;
+            padding: 25px;
+            background-color: #c0c0c0;
+            border: 1px solid #333;
+            margin-bottom: 20px;
+        }
+
+        .box-sizing-example {
+            width: 300px;
+            padding: 25px;
+            box-sizing: border-box;
+            background-color: #b0b0b0;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Padding Examples</h1>
+
+    <h2>Basic Padding</h2>
+    <div class="padding-example">
+        This div has 20px padding on all sides.
+    </div>
+
+    <h2>Individual Side Padding</h2>
+    <div class="individual-padding">
+        This div has different padding for each side: 10px top, 20px right, 30px bottom, 40px left.
+    </div>
+
+    <h2>Shorthand Padding</h2>
+    <div class="shorthand-four">Four values: 5px 10px 15px 20px</div>
+    <div class="shorthand-three">Three values: 5px 10px 15px</div>
+    <div class="shorthand-two">Two values: 5px 10px</div>
+    <div class="shorthand-one">One value: 5px</div>
+
+    <h2>Padding and Element Width</h2>
+    <div class="width-example">
+        This div has a width of 300px and 25px padding, making its total width 350px.
+    </div>
+
+    <div class="box-sizing-example">
+        This div also has a width of 300px and 25px padding, but uses box-sizing: border-box to maintain a total width of 300px.
+    </div>
+</body>
+</html>

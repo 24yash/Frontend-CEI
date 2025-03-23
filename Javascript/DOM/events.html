@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript HTML DOM Events</title>
+    <style>
+      .hover-effect {
+        color: black;
+        background-color: lightgray;
+        padding: 10px;
+      }
+      .hover-effect:hover {
+        color: white;
+        background-color: darkgray;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Reacting to Events -->
+    <h2 onclick="this.innerHTML = 'You clicked me!'">Click on this text!</h2>
+
+    <!-- Using a Function in an Event -->
+    <button onclick="displayDate()">Click to Display Date</button>
+    <p id="dateOutput"></p>
+
+    <!-- Assign Events Using the DOM -->
+    <button id="changeColorBtn">Change Color</button>
+    <p id="colorText">This text will change color.</p>
+
+    <!-- onmouseover and onmouseout Events -->
+    <div
+      class="hover-effect"
+      onmouseover="mouseOver(this)"
+      onmouseout="mouseOut(this)"
+    >
+      Hover over me!
+    </div>
+
+    <!-- oninput and onchange Events -->
+    <label for="textInput">Type something:</label>
+    <input
+      type="text"
+      id="textInput"
+      oninput="showInput()"
+      onchange="finalizeInput()"
+    />
+    <p id="inputOutput"></p>
+
+    <!-- Script -->
+    <script>
+      // Reacting to Events: Inline event handling
+      function displayDate() {
+        document.getElementById("dateOutput").innerHTML =
+          new Date().toLocaleString();
+      }
+
+      // Assign Events Using the DOM: Adding events dynamically
+      document.getElementById("changeColorBtn").onclick = function () {
+        document.getElementById("colorText").style.color = "blue";
+      };
+
+      // onmouseover and onmouseout Events: Hover effects
+      function mouseOver(element) {
+        element.innerHTML = "You're hovering!";
+      }
+
+      function mouseOut(element) {
+        element.innerHTML = "Hover over me!";
+      }
+
+      // oninput and onchange Events: Input field interactions
+      function showInput() {
+        const inputValue = document.getElementById("textInput").value;
+        document.getElementById(
+          "inputOutput"
+        ).innerHTML = `Current input: ${inputValue}`;
+      }
+
+      function finalizeInput() {
+        const inputValue = document.getElementById("textInput").value;
+        alert(`Final input is: ${inputValue}`);
+      }
+    </script>
+  </body>
+</html>

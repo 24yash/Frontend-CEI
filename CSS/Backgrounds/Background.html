@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Background Properties Tutorial</title>
+    <style>
+        /* Full page background using shorthand property */
+        body {
+            background: #f0f8ff url('https://www.w3schools.com/css/paper.gif') repeat fixed center;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background color with opacity vs RGBA */
+        .transparency-demo {
+            background-color: rgba(0, 128, 0, 0.3); /* 30% opaque green */
+            padding: 20px;
+            margin: 15px 0;
+        }
+        
+        .opacity-demo {
+            background-color: #008000; /* Solid green */
+            opacity: 0.3;
+            padding: 20px;
+        }
+
+        /* Background image positioning */
+        .position-demo {
+            background-image: url('https://www.w3schools.com/css/img_tree.png');
+            background-repeat: no-repeat;
+            background-position: right top;
+            height: 200px;
+            border: 2px solid #333;
+            margin: 15px 0;
+        }
+
+        /* Background repeat patterns */
+        .repeat-demo {
+            background-image: url('https://www.w3schools.com/css/gradient_bg.png');
+            background-repeat: repeat-x;
+            height: 100px;
+            margin: 15px 0;
+            border: 1px solid #666;
+        }
+
+        /* Background attachment */
+        .scroll-fixed {
+            background-image: url('https://www.w3schools.com/css/img_tree.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 800px;
+            border: 2px dashed #444;
+        }
+
+        /* Shorthand property example */
+        .shorthand-example {
+            background: #fff3cd url('https://www.w3schools.com/css/paper.gif') no-repeat right top;
+            padding: 40px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="transparency-demo">
+        <h2>RGBA Transparency</h2>
+        <p>Background with 30% opacity (doesn't affect text)</p>
+    </div>
+
+    <div class="opacity-demo">
+        <h2>Opacity Property</h2>
+        <p>30% opacity affects entire element and children</p>
+    </div>
+
+    <div class="position-demo">
+        <h2>Positioned Background</h2>
+        <p>Image positioned top-right with no-repeat</p>
+    </div>
+
+    <div class="repeat-demo">
+        <h2>Repeating Background</h2>
+        <p>Horizontal gradient repeat (repeat-x)</p>
+    </div>
+
+    <div class="scroll-fixed">
+        <h2>Fixed Attachment</h2>
+        <p>Background image remains fixed during scrolling</p>
+    </div>
+
+    <div class="shorthand-example">
+        <h2>Shorthand Property</h2>
+        <p>Combines color, image, repeat, and position</p>
+    </div>
+</body>
+</html>

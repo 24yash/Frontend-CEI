@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Iframes Tutorial</title>
+    <style>
+        /* Styling for the iframe examples */
+        .custom-border {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Iframes</h1>
+
+    <!-- Basic iframe example -->
+    <iframe src="https://example.com" title="Example iframe">
+        <!-- Fallback content for browsers that don't support iframes -->
+        Your browser does not support iframes.
+    </iframe>
+
+    <!-- Setting height and width using attributes -->
+    <iframe src="https://example.com" height="200" width="300" title="Example iframe with dimensions"></iframe>
+
+    <!-- Setting height and width using CSS -->
+    <iframe src="https://example.com" style="height:200px;width:300px;" title="Example iframe with CSS dimensions"></iframe>
+
+    <!-- Removing the border -->
+    <iframe src="https://example.com" style="border:none;" title="Example iframe without border"></iframe>
+
+    <!-- Custom border styling -->
+    <iframe src="https://example.com" class="custom-border" title="Example iframe with custom border"></iframe>
+
+    <!-- Using iframe as a target for a link -->
+    <iframe src="https://example.com" name="iframe_a" title="Target iframe"></iframe>
+    <p><a href="https://www.w3schools.com" target="iframe_a">Open W3Schools in the iframe</a></p>
+
+    <script>
+        // JavaScript can be used to manipulate iframes if needed
+        // For example, you could dynamically change the src attribute
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float Tutorial</title>
+    <style>
+        /* Basic float example */
+        .float-container {
+            border: 3px solid #fff;
+            padding: 20px;
+        }
+        .float-child {
+            width: 50%;
+            float: left;
+            padding: 20px;
+            border: 2px solid red;
+        }
+
+        /* Clear example */
+        .clear-container {
+            border: 3px solid #fff;
+            padding: 20px;
+        }
+        .clear-child {
+            float: left;
+            padding: 20px;
+            border: 2px solid blue;
+        }
+        .clear-after {
+            clear: both;
+            border: 2px solid green;
+            padding: 20px;
+        }
+
+        /* Clearfix hack */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Float examples */
+        .box {
+            float: left;
+            width: 33.33%;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+        .box1 { background-color: #ff9999; }
+        .box2 { background-color: #99ff99; }
+        .box3 { background-color: #9999ff; }
+
+        /* Navigation menu example */
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        .nav li {
+            float: left;
+        }
+        .nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .nav li a:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Float Tutorial</h1>
+
+    <h2>Basic Float Example</h2>
+    <div class="float-container">
+        <div class="float-child">
+            <h3>Float Column 1</h3>
+            <p>This is some text in the first column.</p>
+        </div>
+        <div class="float-child">
+            <h3>Float Column 2</h3>
+            <p>This is some text in the second column.</p>
+        </div>
+    </div>
+
+    <h2>Clear Example</h2>
+    <div class="clear-container">
+        <div class="clear-child">
+            <h3>Floated Element</h3>
+            <p>This element is floated to the left.</p>
+        </div>
+        <div class="clear-after">
+            <h3>Cleared Element</h3>
+            <p>This element is cleared and appears below the floated element.</p>
+        </div>
+    </div>
+
+    <h2>Clearfix Hack</h2>
+    <div class="clearfix">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+
+    <h2>Navigation Menu Example</h2>
+    <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</body>
+</html>

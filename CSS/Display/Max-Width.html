@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Width and Max-Width Example</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Example with width */
+        .ex1 {
+            width: 500px;
+            margin: auto;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+
+        /* Example with max-width */
+        .ex2 {
+            max-width: 500px;
+            margin: auto;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+
+        /* Responsive design demonstration */
+        @media screen and (max-width: 600px) {
+            .ex1, .ex2 {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Width and Max-Width Example</h1>
+
+    <h2>Using width</h2>
+    <div class="ex1">
+        <p>This div has a width of 500px. If the browser window is smaller than 500px, a horizontal scrollbar will appear.</p>
+    </div>
+
+    <h2>Using max-width</h2>
+    <div class="ex2">
+        <p>This div has a max-width of 500px. If the browser window is smaller than 500px, it will adjust to the window size without creating a horizontal scrollbar.</p>
+    </div>
+
+    <p><strong>Note:</strong> Resize the browser window to see how the two divs behave differently.</p>
+</body>
+</html>

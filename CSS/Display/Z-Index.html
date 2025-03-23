@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS z-index Tutorial</title>
+    <style>
+        /* Basic z-index example */
+        .container {
+            position: relative;
+            height: 200px;
+        }
+        .text {
+            position: relative;
+            z-index: 1;
+        }
+        .image {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            background-color: #ccc;
+        }
+
+        /* Multiple elements with z-index */
+        .box-container {
+            position: relative;
+            height: 150px;
+        }
+        .black-box {
+            position: relative;
+            z-index: 1;
+            border: 2px solid black;
+            height: 100px;
+            margin: 30px;
+        }
+        .gray-box {
+            position: absolute;
+            z-index: 3;
+            background: lightgray;
+            height: 60px;
+            width: 70%;
+            left: 50px;
+            top: 50px;
+        }
+        .green-box {
+            position: absolute;
+            z-index: 2;
+            background: lightgreen;
+            width: 35%;
+            left: 270px;
+            top: -15px;
+            height: 100px;
+        }
+
+        /* Without z-index */
+        .no-z-index-container {
+            position: relative;
+            height: 150px;
+        }
+        .no-z-index-black-box {
+            position: relative;
+            border: 2px solid black;
+            height: 100px;
+            margin: 30px;
+        }
+        .no-z-index-gray-box {
+            position: absolute;
+            background: lightgray;
+            height: 60px;
+            width: 70%;
+            left: 50px;
+            top: 50px;
+        }
+        .no-z-index-green-box {
+            position: absolute;
+            background: lightgreen;
+            width: 35%;
+            left: 270px;
+            top: -15px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS z-index Tutorial</h1>
+
+    <h2>Basic z-index Example</h2>
+    <div class="container">
+        <div class="text">
+            <h3>This is a heading</h3>
+            <p>The image has a z-index of -1, so it will be placed behind the text.</p>
+        </div>
+        <div class="image"></div>
+    </div>
+
+    <h2>Multiple Elements with z-index</h2>
+    <div class="box-container">
+        <div class="black-box">Black box (z-index: 1)</div>
+        <div class="gray-box">Gray box (z-index: 3)</div>
+        <div class="green-box">Green box (z-index: 2)</div>
+    </div>
+
+    <h2>Without z-index</h2>
+    <div class="no-z-index-container">
+        <div class="no-z-index-black-box">Black box</div>
+        <div class="no-z-index-gray-box">Gray box</div>
+        <div class="no-z-index-green-box">Green box</div>
+    </div>
+</body>
+</html>

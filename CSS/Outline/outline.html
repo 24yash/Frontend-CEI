@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Outline Tutorial</title>
+    <style>
+        /* Basic outline */
+        .basic-outline {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: red;
+            outline-width: 2px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Outline styles */
+        .outline-styles p {
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+        .dotted { outline-style: dotted; }
+        .dashed { outline-style: dashed; }
+        .solid { outline-style: solid; }
+        .double { outline-style: double; }
+        .groove { outline-style: groove; }
+        .ridge { outline-style: ridge; }
+        .inset { outline-style: inset; }
+        .outset { outline-style: outset; }
+
+        /* Outline widths */
+        .outline-widths p {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: red;
+            margin: 5px;
+            padding: 5px;
+        }
+        .thin { outline-width: thin; }
+        .medium { outline-width: medium; }
+        .thick { outline-width: thick; }
+        .custom { outline-width: 4px; }
+
+        /* Outline colors */
+        .outline-colors p {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-width: 2px;
+            margin: 5px;
+            padding: 5px;
+        }
+        .red { outline-color: red; }
+        .hex { outline-color: #00ff00; }
+        .rgb { outline-color: rgb(0, 0, 255); }
+        .hsl { outline-color: hsl(300, 100%, 50%); }
+
+        /* Outline shorthand */
+        .outline-shorthand p {
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+        .shorthand1 { outline: dashed; }
+        .shorthand2 { outline: dotted red; }
+        .shorthand3 { outline: 5px solid yellow; }
+        .shorthand4 { outline: thick ridge pink; }
+
+        /* Outline offset */
+        .outline-offset {
+            margin: 20px;
+            border: 1px solid black;
+            outline: 5px solid red;
+            outline-offset: 15px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Outline Tutorial</h1>
+
+    <h2>Basic Outline</h2>
+    <div class="basic-outline">This element has a basic outline.</div>
+
+    <h2>Outline Styles</h2>
+    <div class="outline-styles">
+        <p class="dotted">Dotted outline</p>
+        <p class="dashed">Dashed outline</p>
+        <p class="solid">Solid outline</p>
+        <p class="double">Double outline</p>
+        <p class="groove">Groove outline</p>
+        <p class="ridge">Ridge outline</p>
+        <p class="inset">Inset outline</p>
+        <p class="outset">Outset outline</p>
+    </div>
+
+    <h2>Outline Widths</h2>
+    <div class="outline-widths">
+        <p class="thin">Thin outline</p>
+        <p class="medium">Medium outline</p>
+        <p class="thick">Thick outline</p>
+        <p class="custom">Custom (4px) outline</p>
+    </div>
+
+    <h2>Outline Colors</h2>
+    <div class="outline-colors">
+        <p class="red">Red outline (named color)</p>
+        <p class="hex">Green outline (hex value)</p>
+        <p class="rgb">Blue outline (RGB value)</p>
+        <p class="hsl">Purple outline (HSL value)</p>
+    </div>
+
+    <h2>Outline Shorthand</h2>
+    <div class="outline-shorthand">
+        <p class="shorthand1">Dashed outline</p>
+        <p class="shorthand2">Dotted red outline</p>
+        <p class="shorthand3">5px solid yellow outline</p>
+        <p class="shorthand4">Thick ridge pink outline</p>
+    </div>
+
+    <h2>Outline Offset</h2>
+    <div class="outline-offset">
+        This element has an outline offset of 15px.
+    </div>
+</body>
+</html>

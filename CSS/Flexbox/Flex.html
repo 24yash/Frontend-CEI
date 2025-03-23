@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox Tutorial</title>
+    <style>
+      /* Flexbox Intro */
+      .intro-container {
+        display: flex; /* Enables flexbox */
+        justify-content: space-between; /* Distributes items evenly */
+      }
+      .intro-item {
+        flex: 1; /* Allows items to grow and shrink */
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+
+      /* Flex Container */
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        border: 2px solid #333;
+      }
+
+      .container-item {
+        width: 50px;
+        height: 50px;
+        background-color: #3498db;
+        margin: 5px;
+      }
+
+      /* Flex Items */
+      .items-container {
+        display: flex;
+      }
+
+      .flex-item {
+        flex: 1; /* Equal growth */
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+
+      .grow-2 {
+        flex-grow: 2; /* Grows twice as much as others */
+      }
+
+      .shrink-0 {
+        flex-shrink: 0; /* Doesn't shrink */
+      }
+
+      .order-1 {
+        order: 1; /* Appears last */
+      }
+
+      /* Responsive Flexbox */
+      .responsive-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .responsive-item {
+        flex: 50%; /* Two columns by default */
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      @media (max-width: 600px) {
+        .responsive-item {
+          flex: 100%; /* Full width on small screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Flexbox Tutorial</h1>
+    <h2>Flexbox Intro</h2>
+    <div class="intro-container">
+      <div class="intro-item">Item 1</div>
+      <div class="intro-item">Item 2</div>
+      <div class="intro-item">Item 3</div>
+    </div>
+    <h2>Flex Container</h2>
+    <div class="container">
+      <div class="container-item"></div>
+      <div class="container-item"></div>
+      <div class="container-item"></div>
+    </div>
+    <h2>Flex Items</h2>
+    <div class="items-container">
+      <div class="flex-item">Normal</div>
+      <div class="flex-item grow-2">Grow 2</div>
+      <div class="flex-item shrink-0">No Shrink</div>
+      <div class="flex-item order-1">Last</div>
+    </div>
+    <h2>Responsive Flexbox</h2>
+    <div class="responsive-container">
+      <div class="responsive-item">Column 1</div>
+      <div class="responsive-item">Column 2</div>
+    </div>
+  </body>
+</html>

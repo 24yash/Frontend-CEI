@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML JavaScript Tutorial</title>
+</head>
+<body>
+    <h1>HTML JavaScript</h1>
+
+
+    <!-- Paragraph elements to be manipulated by JavaScript -->
+    <p id="demo1"></p>
+    <p id="demo2">This text will be styled</p>
+
+    <!-- Image element to be manipulated by JavaScript -->
+    <img id="image" src="original-image.jpg" alt="Example image">
+
+    <!-- The <noscript> tag defines alternate content for users with disabled scripts -->
+    <noscript>
+        <p>Your browser does not support JavaScript!</p>
+    </noscript>
+
+    <!-- The HTML <script> tag is used to define client-side JavaScript -->
+        <script>
+            // JavaScript can change HTML content
+            document.getElementById("demo1").innerHTML = "Hello JavaScript!";
+    
+            // JavaScript can change HTML styles
+            document.getElementById("demo2").style.fontSize = "25px";
+            document.getElementById("demo2").style.color = "red";
+            document.getElementById("demo2").style.backgroundColor = "yellow";
+    
+            // JavaScript can change HTML attributes
+            document.getElementById("image").src = "new-image.jpg";
+        </script>
+
+    <!-- External JavaScript can be referenced using the src attribute -->
+    <script src="external-script.js"></script>
+
+    <!-- JavaScript can be placed in the <head> or <body> of the HTML document -->
+    <!-- It's often best to place scripts at the bottom of the <body> for better page load performance -->
+
+    <script>
+        // Example of a simple function
+        function myFunction() {
+            document.getElementById("demo3").innerHTML = "Paragraph changed by a function.";
+        }
+    </script>
+
+    <p id="demo3">A paragraph to be changed by a function.</p>
+    <button onclick="myFunction()">Click me</button>
+</body>
+</html>

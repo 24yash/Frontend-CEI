@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML id Attribute Tutorial</title>
+    <style>
+        /* Styling an element with a specific id */
+        #myHeader {
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Styling elements with a class (for comparison) */
+        .city {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Using the id attribute to uniquely identify an element -->
+    <h1 id="myHeader">My Header</h1>
+
+    <!-- The id attribute must be unique within the document -->
+    <!-- Incorrect: <p id="myHeader">This would be invalid</p> -->
+
+    <!-- Using class for multiple elements (for comparison) -->
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+
+    <!-- Creating a bookmark using id -->
+    <h2 id="C4">Chapter 4</h2>
+    <p>This is the content of Chapter 4.</p>
+
+    <!-- Link to the bookmark -->
+    <a href="#C4">Jump to Chapter 4</a>
+
+    <!-- Using id with JavaScript -->
+    <h3 id="jsDemo">JavaScript will change this text</h3>
+
+    <button onclick="changeText()">Click me</button>
+
+    <script>
+        // JavaScript can access elements by id
+        function changeText() {
+            document.getElementById("jsDemo").innerHTML = "Text changed by JavaScript!";
+        }
+    </script>
+</body>
+</html>

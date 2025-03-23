@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Formatting Tutorial</title>
+    <style>
+        /* Basic text color */
+        body {
+            color: blue; /* Default text color for the page */
+        }
+
+        h1 {
+            color: green; /* Specific color for h1 elements */
+        }
+
+        /* Text color and background color */
+        .color-background {
+            background-color: lightgrey;
+            color: blue;
+        }
+
+        .color-background h2 {
+            background-color: black;
+            color: white;
+        }
+
+        .color-background div {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        /* Text formatting example */
+        .text-formatting {
+            text-align: center;
+            text-transform: uppercase;
+            color: #ff0000;
+        }
+
+        .text-formatting p {
+            text-indent: 50px;
+            letter-spacing: 3px;
+            line-height: 1.8;
+        }
+
+        .text-formatting a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Text Formatting Tutorial</h1>
+
+    <h2>Basic Text Color</h2>
+    <p>This paragraph inherits the blue color from the body.</p>
+
+    <div class="color-background">
+        <h2>Text Color and Background Color</h2>
+        <p>This paragraph has a light grey background and blue text.</p>
+        <div>This div has a blue background and white text.</div>
+    </div>
+
+    <div class="text-formatting">
+        <h2>Text Formatting Example</h2>
+        <p>This paragraph demonstrates various text formatting properties. It is indented, has increased letter spacing, and a specific line height. The link below has no underline.</p>
+        <a href="#">Formatted Link</a>
+    </div>
+</body>
+</html>

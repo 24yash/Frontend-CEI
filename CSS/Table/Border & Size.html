@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table Styling</title>
+    <style>
+        /* Basic table styling */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        /* Table border collapse */
+        .collapsed-border {
+            border-collapse: collapse;
+        }
+
+        /* Full-width table */
+        .full-width {
+            width: 100%;
+        }
+
+        /* Half-width table */
+        .half-width {
+            width: 50%;
+        }
+
+        /* Table with specific height */
+        .custom-height th {
+            height: 70px;
+        }
+
+        /* Table with only outer border */
+        .outer-border {
+            border: 1px solid black;
+        }
+
+        .outer-border th, .outer-border td {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Table Styling Examples</h1>
+
+    <h2>Basic Table with Borders</h2>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+    </table>
+
+    <h2>Table with Collapsed Borders</h2>
+    <table class="collapsed-border">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+    </table>
+
+    <h2>Full-Width Table</h2>
+    <table class="full-width">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+    </table>
+
+    <h2>Half-Width Table</h2>
+    <table class="half-width">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+    </table>
+
+    <h2>Table with Custom Height</h2>
+    <table class="custom-height">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+    </table>
+
+    <h2>Table with Only Outer Border</h2>
+    <table class="outer-border">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+    </table>
+</body>
+</html>

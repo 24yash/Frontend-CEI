@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Elements</title>
+</head>
+<body>
+
+    <!-- The <form> element defines an HTML form for user input -->
+    <form action="/action_page.php">
+
+        <!-- The <label> element defines a label for an <input> element -->
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <!-- The <input> element defines an input control -->
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <!-- The <select> element defines a drop-down list -->
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br><br>
+
+        <!-- The <textarea> element defines a multi-line input field -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <!-- The <button> element defines a clickable button -->
+        <button type="submit">Submit</button>
+
+        <!-- The <fieldset> element is used to group related data in a form -->
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <!-- The <datalist> element specifies a list of pre-defined options for an input element -->
+            <label for="browsers">Choose your browser:</label>
+            <input list="browsers" id="browser" name="browser">
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Edge">
+                <option value="Opera">
+            </datalist><br><br>
+
+            <!-- The output element represents the result of a calculation -->
+            0 + 
+            <input type="number" id="number1" name="number1" value="50">
+            +
+            <input type="number" id="number2" name="number2" value="50">
+            = 
+            <output id="result"></output><br><br>
+
+            <!-- Script to calculate the sum of two numbers -->
+            <script>
+                const number1 = document.getElementById('number1');
+                const number2 = document.getElementById('number2');
+                const result = document.getElementById('result');
+
+                function calculate() {
+                    result.value = parseInt(number1.value) + parseInt(number2.value);
+                }
+
+                number1.addEventListener('input', calculate);
+                number2.addEventListener('input', calculate);
+            </script>
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>

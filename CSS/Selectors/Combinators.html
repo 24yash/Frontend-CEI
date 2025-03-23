@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators Tutorial</title>
+    <style>
+        /* Descendant combinator */
+        div p {
+            background-color: yellow;
+        }
+
+        /* Child combinator */
+        div > p {
+            border: 1px solid blue;
+        }
+
+        /* Adjacent sibling combinator */
+        div + p {
+            color: red;
+        }
+
+        /* General sibling combinator */
+        div ~ p {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Combinators Tutorial</h1>
+
+    <div>
+        <p>This paragraph is a descendant of div and a child of div.</p>
+        <section>
+            <p>This paragraph is a descendant of div but not a child of div.</p>
+        </section>
+    </div>
+
+    <p>This paragraph is adjacent to the div.</p>
+    <p>This paragraph is a general sibling of the div.</p>
+
+    <div>
+        <p>Another div with a paragraph.</p>
+    </div>
+
+    <p>This paragraph is also a general sibling of both divs.</p>
+</body>
+</html>

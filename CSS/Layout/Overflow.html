@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Tutorial</title>
+    <style>
+        /* Basic overflow example */
+        .overflow-container {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+
+        /* visible (default) */
+        .overflow-visible {
+            overflow: visible;
+        }
+
+        /* hidden */
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        /* scroll */
+        .overflow-scroll {
+            overflow: scroll;
+        }
+
+        /* auto */
+        .overflow-auto {
+            overflow: auto;
+        }
+
+        /* overflow-x and overflow-y */
+        .overflow-xy {
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+        /* Content for demonstration */
+        .content {
+            width: 300px;
+            height: 200px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Overflow Tutorial</h1>
+
+    <h2>overflow: visible (default)</h2>
+    <div class="overflow-container overflow-visible">
+        <div class="content">This content is larger than the container, demonstrating the default visible overflow.</div>
+    </div>
+
+    <h2>overflow: hidden</h2>
+    <div class="overflow-container overflow-hidden">
+        <div class="content">This content is clipped and the rest is invisible.</div>
+    </div>
+
+    <h2>overflow: scroll</h2>
+    <div class="overflow-container overflow-scroll">
+        <div class="content">This content has scrollbars added to see the rest.</div>
+    </div>
+
+    <h2>overflow: auto</h2>
+    <div class="overflow-container overflow-auto">
+        <div class="content">This content adds scrollbars only when necessary.</div>
+    </div>
+
+    <h2>overflow-x and overflow-y</h2>
+    <div class="overflow-container overflow-xy">
+        <div class="content">This content demonstrates separate horizontal and vertical overflow handling.</div>
+    </div>
+</body>
+</html>

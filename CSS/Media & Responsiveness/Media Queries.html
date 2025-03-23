@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Media Queries Tutorial</title>
+    <style>
+      /* Basic styles */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+      /* Media query for screen size */
+      @media screen and (min-width: 600px) {
+        body {
+          background-color: #e0e0e0;
+        }
+      }
+
+      /* Media query for print */
+      @media print {
+        body {
+          background-color: white;
+          color: black;
+        }
+      }
+
+      /* Responsive navigation */
+      .topnav {
+        background-color: #333;
+        overflow: hidden;
+      }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* Responsive columns */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 15px;
+      }
+
+      /* Media query for responsive layout */
+      @media screen and (max-width: 992px) {
+        .column {
+          width: 50%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+
+      /* Hide element on small screens */
+      .hide-small {
+        display: block;
+      }
+
+      @media screen and (max-width: 600px) {
+        .hide-small {
+          display: none;
+        }
+      }
+
+      /* Responsive font size */
+      .responsive-text {
+        font-size: 16px;
+      }
+
+      @media screen and (min-width: 600px) {
+        .responsive-text {
+          font-size: 24px;
+        }
+      }
+
+      /* Orientation-specific styles */
+      @media screen and (orientation: landscape) {
+        body {
+          background-color: #d0f0c0;
+        }
+      }
+
+      /* Min and max width combination */
+      @media screen and (min-width: 600px) and (max-width: 900px) {
+        .mid-range {
+          border: 2px solid #333;
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Media Queries Tutorial</h1>
+    text
+    <div class="topnav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="column">Column 1</div>
+    <div class="column">Column 2</div>
+    <div class="column">Column 3</div>
+    <div class="column">Column 4</div>
+
+    <div class="hide-small">
+      <p>This content is hidden on small screens</p>
+    </div>
+
+    <p class="responsive-text">This text changes size based on screen width</p>
+
+    <div class="mid-range">
+      <p>This div has a border when screen width is between 600px and 900px</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Navigation Bar Tutorial</title>
+    <style>
+        /* Basic Navigation Bar */
+        ul.basic-nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Vertical Navigation Bar */
+        ul.vertical-nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+        }
+
+        ul.vertical-nav li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        ul.vertical-nav li a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        ul.vertical-nav .active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        /* Horizontal Navigation Bar - Inline Method */
+        ul.horizontal-nav-inline {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul.horizontal-nav-inline li {
+            display: inline;
+        }
+
+        /* Horizontal Navigation Bar - Float Method */
+        ul.horizontal-nav-float {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        ul.horizontal-nav-float li {
+            float: left;
+        }
+
+        ul.horizontal-nav-float li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.horizontal-nav-float li a:hover {
+            background-color: #111;
+        }
+
+        ul.horizontal-nav-float .active {
+            background-color: #04AA6D;
+        }
+    </style>
+</head>
+<body>
+    <h2>Basic Navigation Bar</h2>
+    <ul class="basic-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <h2>Vertical Navigation Bar</h2>
+    <ul class="vertical-nav">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <h2>Horizontal Navigation Bar - Inline Method</h2>
+    <ul class="horizontal-nav-inline">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <h2>Horizontal Navigation Bar - Float Method</h2>
+    <ul class="horizontal-nav-float">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</body>
+</html>

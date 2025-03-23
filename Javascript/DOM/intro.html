@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript HTML DOM Tutorial</title>
+  </head>
+  <body>
+    <!-- DOM Intro -->
+    <h1 id="header">Welcome to DOM Tutorial</h1>
+    <p id="intro">This is an introduction to the DOM.</p>
+
+    <!-- DOM Methods -->
+    <button id="changeText">Click to Change Text</button>
+    <div id="content">Original Content</div>
+
+    <!-- DOM Document -->
+    <ul id="list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <!-- DOM Elements -->
+    <p class="highlight">Highlighted paragraph.</p>
+    <p class="highlight">Another highlighted paragraph.</p>
+
+    <!-- Script -->
+    <script>
+      // DOM Intro: Access and manipulate the DOM tree
+      document.getElementById("header").innerHTML = "Learn JavaScript HTML DOM"; // Change header text
+
+      // DOM Methods: Perform actions on elements
+      document
+        .getElementById("changeText")
+        .addEventListener("click", function () {
+          document.getElementById("content").innerHTML =
+            "Content has been changed!";
+        });
+
+      // DOM Document: Access elements using document methods
+      const listItems = document.getElementsByTagName("li"); // Get all list items
+      for (let i = 0; i < listItems.length; i++) {
+        listItems[i].style.color = "blue"; // Change text color of each list item
+      }
+
+      // DOM Elements: Find and manipulate elements by class name or CSS selectors
+      const highlights = document.getElementsByClassName("highlight"); // Get all elements with class "highlight"
+      for (let i = 0; i < highlights.length; i++) {
+        highlights[i].style.backgroundColor = "yellow"; // Highlight background color
+      }
+
+      const firstHighlight = document.querySelector(".highlight"); // Select first element with class "highlight"
+      firstHighlight.innerHTML += " (First Highlighted Paragraph)";
+    </script>
+  </body>
+</html>

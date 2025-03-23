@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Counters Tutorial</title>
+    <style>
+        /* CSS Counters */
+        body {
+            counter-reset: section; /* Create a counter named 'section' */
+        }
+
+        h2::before {
+            counter-increment: section; /* Increment the 'section' counter */
+            content: "Section " counter(section) ": "; /* Display the counter value */
+        }
+
+        /* Nesting Counters */
+        h1 {
+            counter-reset: subsection; /* Create a 'subsection' counter for each h1 */
+        }
+
+        h1::before {
+            counter-increment: section;
+            content: "Section " counter(section) ". ";
+        }
+
+        h2::before {
+            counter-increment: subsection;
+            content: counter(section) "." counter(subsection) " ";
+        }
+
+        /* Outlined Lists */
+        ol {
+            counter-reset: section;
+            list-style-type: none;
+        }
+
+        li::before {
+            counter-increment: section;
+            content: counters(section, ".") " "; /* Use counters() for nested counters */
+        }
+    </style>
+</head>
+<body>
+    <h1>Main Title</h1>
+    <h2>First Subtitle</h2>
+    <p>This demonstrates the use of CSS counters for automatic numbering.</p>
+    <h2>Second Subtitle</h2>
+    <p>Counters can be used to create hierarchical numbering schemes.</p>
+
+    <h1>Another Main Title</h1>
+    <h2>Another Subtitle</h2>
+    <p>This shows how nested counters work across different levels.</p>
+
+    <ol>
+        <li>First level item
+            <ol>
+                <li>Second level item</li>
+                <li>Another second level item</li>
+            </ol>
+        </li>
+        <li>Another first level item</li>
+    </ol>
+</body>
+</html>

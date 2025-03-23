@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists Tutorial</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Unordered list styles */
+        ul.circle {
+            list-style-type: circle;
+        }
+
+        ul.square {
+            list-style-type: square;
+        }
+
+        /* Ordered list styles */
+        ol.upper-roman {
+            list-style-type: upper-roman;
+        }
+
+        ol.lower-alpha {
+            list-style-type: lower-alpha;
+        }
+
+        /* Image as list item marker */
+        ul.custom-image {
+            list-style-image: url('sqpurple.gif');
+        }
+
+        /* List item marker position */
+        ul.outside {
+            list-style-position: outside;
+        }
+
+        ul.inside {
+            list-style-position: inside;
+        }
+
+        /* Remove default settings */
+        ul.no-style {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Shorthand property */
+        ul.shorthand {
+            list-style: square inside url("sqpurple.gif");
+        }
+
+        /* Styling lists with colors */
+        ol.colored {
+            background: #ff9999;
+            padding: 20px;
+        }
+
+        ul.colored {
+            background: #3399ff;
+            padding: 20px;
+        }
+
+        ol.colored li {
+            background: #ffe5e5;
+            color: darkred;
+            padding: 5px;
+            margin-left: 35px;
+        }
+
+        ul.colored li {
+            background: #cce5ff;
+            color: darkblue;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Lists Tutorial</h1>
+
+    <h2>Unordered Lists</h2>
+    <ul class="circle">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <ul class="square">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <h2>Ordered Lists</h2>
+    <ol class="upper-roman">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+
+    <ol class="lower-alpha">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+
+    <h2>Image as List Item Marker</h2>
+    <ul class="custom-image">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <h2>List Item Marker Position</h2>
+    <ul class="outside">
+        <li>Coffee - Outside (default)</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <ul class="inside">
+        <li>Coffee - Inside</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <h2>Remove Default Settings</h2>
+    <ul class="no-style">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <h2>Shorthand Property</h2>
+    <ul class="shorthand">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <h2>Styling Lists with Colors</h2>
+    <ol class="colored">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+
+    <ul class="colored">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+</body>
+</html>

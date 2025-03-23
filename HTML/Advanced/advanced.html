@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Media Comprehensive Guide</title>
+    
+    <!-- Media Attribute in Link Element -->
+    <link rel="stylesheet" href="print.css" media="print and (resolution: 300dpi)">
+    <!-- 
+        media: Applies stylesheet only for print media with 300dpi resolution
+        Supported in: <link>, <style>, <source>, <a>, <area>
+    -->
+</head>
+<body>
+    <!-- 1. Anchor Tag with Media Attribute -->
+    <section>
+        <h2>Device-Specific Links</h2>
+        <a href="mobile-version.html" 
+           media="handheld and (max-width: 480px)">
+            Mobile Optimized Version
+        </a>
+        <!-- 
+            media: Targets handheld devices with max 480px width 
+            Operators: and, not, comma (OR)
+        -->
+    </section>
+
+    <!-- 2. Media-Responsive Images -->
+    <section>
+        <h2>Adaptive Images</h2>
+        <picture>
+            <source media="(min-width: 1200px)" srcset="large.jpg">
+            <source media="(min-width: 768px)" srcset="medium.jpg">
+            <img src="small.jpg" alt="Responsive Image Example">
+        </picture>
+        <!-- 
+            media: Conditionally load images based on viewport
+            Device Types: screen, print, speech, etc.
+        -->
+    </section>
+
+    <!-- 3. Multimedia Elements -->
+    <section>
+        <h2>Audio/Video Media</h2>
+        <video controls width="600" 
+               poster="preview.jpg"
+               media="screen and (min-color-index: 256)">
+            <source src="video.mp4" type="video/mp4"
+                    media="(min-width: 800px)">
+            <track src="subtitles_en.vtt" kind="subtitles"
+                   srclang="en" label="English">
+            Your browser does not support the video tag.
+        </video>
+        <!-- 
+            media in <source>: HD video only for larger screens
+            media in <video>: Color-capable displays only
+        -->
+    </section>
+
+    <!-- 4. Print-Optimized Content -->
+    <section>
+        <style media="print">
+            .no-print { display: none; }
+            body { font-size: 12pt; }
+        </style>
+        <!-- 
+            media="print": Applies styles only for printed output
+            Media Features: width, height, orientation, resolution
+        -->
+    </section>
+
+    <!-- 5. Complex Media Queries -->
+    <section>
+        <a href="4k-content.html"
+           media="screen and (min-width: 3840px) and (min-color-index: 16)">
+            Ultra HD Content Link
+        </a>
+        <!-- 
+            Combined conditions: 4K screens with high color depth
+            Measurement Units: px, dpi, dpcm
+        -->
+    </section>
+
+    <!-- 6. Accessibility Features -->
+    <section>
+        <audio controls 
+               media="aural and (grid: 0)">
+            <source src="audio.ogg" type="audio/ogg"
+                    media="speech">
+            Your browser does not support audio element.
+        </audio>
+        <!-- 
+            media="aural": For screen readers
+            media="speech": Speech synthesizers
+        -->
+    </section>
+
+    <!-- 7. Media Query Operators -->
+    <section>
+        <link rel="stylesheet" href="mobile.css"
+              media="(max-width: 600px), handheld and (orientation: portrait)">
+        <!-- 
+            Comma operator: Acts as OR condition
+            Not operator: media="not screen and (color)"
+        -->
+    </section>
+
+    <!-- 8. Media Property in JavaScript -->
+    <script>
+        const videoSource = document.querySelector('source');
+        console.log(videoSource.media); // Returns "(min-width: 800px)"
+        videoSource.media = '(min-width: 1024px)'; // Dynamic media update
+    </script>
+</body>
+</html>

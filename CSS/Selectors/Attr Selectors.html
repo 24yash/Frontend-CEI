@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Attribute Selectors Tutorial</title>
+    <style>
+        /* [attribute] selector */
+        a[target] {
+            background-color: yellow;
+        }
+
+        /* [attribute="value"] selector */
+        a[target="_blank"] {
+            background-color: lightblue;
+        }
+
+        /* [attribute~="value"] selector */
+        [title~="flower"] {
+            border: 5px solid yellow;
+        }
+
+        /* [attribute|="value"] selector */
+        [class|="top"] {
+            background: lightgreen;
+        }
+
+        /* [attribute^="value"] selector */
+        [class^="top"] {
+            font-weight: bold;
+        }
+
+        /* [attribute$="value"] selector */
+        [class$="test"] {
+            font-style: italic;
+        }
+
+        /* [attribute*="value"] selector */
+        [class*="te"] {
+            text-decoration: underline;
+        }
+
+        /* Styling forms example */
+        input[type="text"] {
+            width: 150px;
+            display: block;
+            margin-bottom: 10px;
+            background-color: #f0f0f0;
+        }
+
+        input[type="button"] {
+            width: 120px;
+            margin-left: 35px;
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Attribute Selectors Tutorial</h1>
+
+    <h2>Example Links</h2>
+    <a href="https://www.example.com" target="_blank">Link with target="_blank"</a><br>
+    <a href="https://www.example.com" target="_self">Link with target="_self"</a><br>
+    <a href="https://www.example.com">Link without target</a>
+
+    <h2>Elements with title attribute</h2>
+    <p title="red flower">This paragraph has a title with the word "flower".</p>
+    <p title="blue sky">This paragraph doesn't have "flower" in the title.</p>
+
+    <h2>Elements with class attribute</h2>
+    <div class="top-header">This div has class="top-header"</div>
+    <div class="content-top">This div has class="content-top"</div>
+    <div class="test-class">This div has class="test-class"</div>
+    <div class="my-test">This div has class="my-test"</div>
+
+    <h2>Form Example</h2>
+    <form>
+        <input type="text" placeholder="Enter your name">
+        <input type="text" placeholder="Enter your email">
+        <input type="button" value="Submit">
+    </form>
+</body>
+</html>

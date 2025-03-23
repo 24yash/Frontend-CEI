@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display and Visibility</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Block-level elements */
+        .block-element {
+            display: block;
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Inline elements */
+        .inline-element {
+            display: inline;
+            background-color: #e0e0e0;
+            padding: 5px;
+        }
+
+        /* Inline-block elements */
+        .inline-block-element {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #d0d0d0;
+            margin: 5px;
+        }
+
+        /* Hidden elements */
+        .hidden-display {
+            display: none;
+        }
+
+        .hidden-visibility {
+            visibility: hidden;
+        }
+
+        /* Flex container */
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f9f9f9;
+            padding: 10px;
+        }
+
+        .flex-item {
+            background-color: #ddd;
+            padding: 10px;
+        }
+
+        /* Grid container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #f9f9f9;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Display and Visibility Examples</h1>
+
+    <h2>Block-level Elements</h2>
+    <div class="block-element">This is a block-level element</div>
+    <div class="block-element">Another block-level element</div>
+
+    <h2>Inline Elements</h2>
+    <span class="inline-element">This is an inline element</span>
+    <span class="inline-element">Another inline element</span>
+
+    <h2>Inline-block Elements</h2>
+    <div class="inline-block-element"></div>
+    <div class="inline-block-element"></div>
+    <div class="inline-block-element"></div>
+
+    <h2>Hidden Elements</h2>
+    <p>The following element is hidden using display: none;</p>
+    <div class="hidden-display">You can't see me (display: none)</div>
+    <p>The following element is hidden using visibility: hidden;</p>
+    <div class="hidden-visibility">You can't see me, but I take up space (visibility: hidden)</div>
+
+    <h2>Flex Container</h2>
+    <div class="flex-container">
+        <div class="flex-item">Flex Item 1</div>
+        <div class="flex-item">Flex Item 2</div>
+        <div class="flex-item">Flex Item 3</div>
+    </div>
+
+    <h2>Grid Container</h2>
+    <div class="grid-container">
+        <div class="grid-item">Grid Item 1</div>
+        <div class="grid-item">Grid Item 2</div>
+        <div class="grid-item">Grid Item 3</div>
+        <div class="grid-item">Grid Item 4</div>
+        <div class="grid-item">Grid Item 5</div>
+        <div class="grid-item">Grid Item 6</div>
+    </div>
+</body>
+</html>

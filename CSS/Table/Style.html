@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table Styling</title>
+    <style>
+        /* Basic table styling */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+
+        /* Horizontal alignment */
+        .center-align td {
+            text-align: center;
+        }
+
+        .left-align th {
+            text-align: left;
+        }
+
+        /* Vertical alignment */
+        .bottom-align td {
+            height: 50px;
+            vertical-align: bottom;
+        }
+
+        /* Horizontal dividers */
+        .horizontal-dividers th,
+        .horizontal-dividers td {
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Hoverable table */
+        .hoverable tr:hover {
+            background-color: coral;
+        }
+
+        /* Striped table */
+        .striped tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Table color */
+        .colored th {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        /* Responsive table */
+        .responsive-wrapper {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Table Styling Examples</h1>
+
+    <h2>Table Alignment</h2>
+    <table class="center-align">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+        </tr>
+    </table>
+
+    <table class="left-align bottom-align">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+        </tr>
+    </table>
+
+    <h2>Table Styling</h2>
+    <table class="horizontal-dividers hoverable striped colored">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+    </table>
+
+    <h2>Responsive Table</h2>
+    <div class="responsive-wrapper">
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

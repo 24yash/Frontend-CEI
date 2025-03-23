@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Math Functions Tutorial</title>
+    <style>
+        /* calc() function */
+        #div1 {
+            position: absolute;
+            left: 50px;
+            width: calc(100% - 100px); /* Calculates width dynamically */
+            border: 1px solid black;
+            background-color: yellow;
+            padding: 5px;
+        }
+
+        /* max() function */
+        #div2 {
+            background-color: lightblue;
+            height: 100px;
+            width: max(50%, 300px); /* Uses the larger of 50% or 300px */
+        }
+
+        /* min() function */
+        #div3 {
+            background-color: lightgreen;
+            height: 100px;
+            width: min(50%, 300px); /* Uses the smaller of 50% or 300px */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Math Functions</h1>
+
+    <h2>calc() Function</h2>
+    <div id="div1">
+        This div's width is calculated using calc(100% - 100px)
+    </div>
+
+    <h2>max() Function</h2>
+    <div id="div2">
+        This div's width is set to max(50%, 300px)
+    </div>
+
+    <h2>min() Function</h2>
+    <div id="div3">
+        This div's width is set to min(50%, 300px)
+    </div>
+</body>
+</html>

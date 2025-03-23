@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Borders Tutorial</title>
+    <style>
+        /* Basic Border Properties */
+        .border-style-demo {
+            border-style: solid; /* Required for any border to show */
+            border-width: 3px;
+            border-color: #3498db;
+            margin: 15px 0;
+            padding: 10px;
+        }
+
+        /* Border Style Types */
+        .dotted { border-style: dotted; }
+        .dashed { border-style: dashed; }
+        .double { border-style: double; }
+        .groove { border-style: groove; }
+        .ridge { border-style: ridge; }
+        .inset { border-style: inset; }
+        .outset { border-style: outset; }
+
+        /* Border Width Examples */
+        .width-demo {
+            border-style: solid;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        .thin { border-width: thin; }
+        .medium { border-width: medium; }
+        .thick { border-width: thick; }
+        .custom-width { border-width: 5px 2px 8px 3px; } /* Top Right Bottom Left */
+
+        /* Border Color Variations */
+        .color-demo {
+            border-style: solid;
+            border-width: 4px;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        .named-color { border-color: tomato; }
+        .hex-color { border-color: #27ae60; }
+        .rgb-color { border-color: rgb(155, 89, 182); }
+        .hsl-color { border-color: hsl(240, 100%, 50%); }
+
+        /* Individual Side Borders */
+        .mixed-borders {
+            border-top: 4px dotted #e74c3c;
+            border-right: 6px double #2ecc71;
+            border-bottom: 3px dashed #f1c40f;
+            border-left: 5px groove #9b59b6;
+            margin: 15px 0;
+            padding: 20px;
+        }
+
+        /* Shorthand Properties */
+        .shorthand-demo {
+            border: 4px ridge #34495e; /* width | style | color */
+            margin: 15px 0;
+            padding: 15px;
+        }
+        .left-border-shorthand {
+            border-left: 6px solid #e67e22;
+            padding: 10px;
+        }
+
+        /* Rounded Borders */
+        .rounded-demo {
+            border: 3px solid #2c3e50;
+            border-radius: 15px;
+            margin: 15px 0;
+            padding: 15px;
+        }
+        .elliptical-corners {
+            border-radius: 50px 20px 30px 5px / 20px 30px 10px 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Border Style Examples -->
+    <div class="border-style-demo dotted">Dotted Border</div>
+    <div class="border-style-demo dashed">Dashed Border</div>
+    <div class="border-style-demo double">Double Border</div>
+    <div class="border-style-demo groove">Groove Border</div>
+    <div class="border-style-demo ridge">Ridge Border</div>
+
+    <!-- Border Width Examples -->
+    <div class="width-demo thin">Thin Border (1px)</div>
+    <div class="width-demo medium">Medium Border (3px)</div>
+    <div class="width-demo thick">Thick Border (5px)</div>
+    <div class="width-demo custom-width">Mixed Width Borders</div>
+
+    <!-- Border Color Examples -->
+    <div class="color-demo named-color">Named Color (Tomato)</div>
+    <div class="color-demo hex-color">HEX Color (#27ae60)</div>
+    <div class="color-demo rgb-color">RGB Color (rgb(155, 89, 182))</div>
+    <div class="color-demo hsl-color">HSL Color (hsl(240, 100%, 50%))</div>
+
+    <!-- Mixed Borders -->
+    <div class="mixed-borders">
+        Different borders on each side using individual properties
+    </div>
+
+    <!-- Shorthand Examples -->
+    <div class="shorthand-demo">
+        Border using shorthand property (width + style + color)
+    </div>
+    <div class="left-border-shorthand">
+        Left border using border-left shorthand
+    </div>
+
+    <!-- Rounded Borders -->
+    <div class="rounded-demo">Uniform Rounded Corners (15px)</div>
+    <div class="rounded-demo elliptical-corners">Elliptical Corners</div>
+
+    <!-- Border Properties Reference Table -->
+    <h3>CSS Border Properties</h3>
+    <table>
+        <tr>
+            <th>Property</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>border</td>
+            <td>Shorthand for all border properties</td>
+        </tr>
+        <tr>
+            <td>border-style</td>
+            <td>Sets border style (required for visibility)</td>
+        </tr>
+        <tr>
+            <td>border-width</td>
+            <td>Controls border thickness</td>
+        </tr>
+        <tr>
+            <td>border-color</td>
+            <td>Sets border color (inherits text color if unset)</td>
+        </tr>
+        <tr>
+            <td>border-radius</td>
+            <td>Creates rounded corners</td>
+        </tr>
+        <tr>
+            <td>border-[top|right|bottom|left]</td>
+            <td>Individual side borders</td>
+        </tr>
+    </table>
+</body>
+</html>

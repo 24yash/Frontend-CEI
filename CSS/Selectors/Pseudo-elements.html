@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-elements Tutorial</title>
+    <style>
+        /* ::first-line pseudo-element */
+        p::first-line {
+            color: #ff0000;
+            font-variant: small-caps;
+        }
+
+        /* ::first-letter pseudo-element */
+        p::first-letter {
+            color: #ff0000;
+            font-size: xx-large;
+        }
+
+        /* Combining pseudo-elements with HTML classes */
+        p.intro::first-letter {
+            color: #ff0000;
+            font-size: 200%;
+        }
+
+        /* Multiple pseudo-elements */
+        .multiple::first-letter {
+            color: #ff0000;
+            font-size: xx-large;
+        }
+        .multiple::first-line {
+            color: #0000ff;
+            font-variant: small-caps;
+        }
+
+        /* ::before pseudo-element */
+        h1::before {
+            content: url('https://www.w3schools.com/images/w3schools_green.jpg');
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        /* ::after pseudo-element */
+        h1::after {
+            content: " (important)";
+            color: red;
+        }
+
+        /* ::marker pseudo-element */
+        ::marker {
+            color: red;
+            font-size: 23px;
+        }
+
+        /* ::selection pseudo-element */
+        ::selection {
+            color: red;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Pseudo-elements Tutorial</h1>
+
+    <p>This is a paragraph to demonstrate the ::first-line and ::first-letter pseudo-elements. The first line will be red and in small-caps, while the first letter will be red and extra large.</p>
+
+    <p class="intro">This paragraph has a class of "intro" and demonstrates combining pseudo-elements with HTML classes.</p>
+
+    <p class="multiple">This paragraph demonstrates multiple pseudo-elements. The first letter will be red and extra large, while the first line will be blue and in small-caps.</p>
+
+    <h1>Heading with ::before and ::after</h1>
+
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+
+    <p>Select some text to see the ::selection pseudo-element in action.</p>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Classes Tutorial</title>
+    <style>
+        /* Basic class styling */
+        .city {
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        /* Class for text styling */
+        .note {
+            font-size: 120%;
+            color: red;
+        }
+
+        /* Multiple classes */
+        .main {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Classes Tutorial</h1>
+
+    <!-- Basic class usage -->
+    <h2>Basic Class Usage</h2>
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+    </div>
+
+    <!-- Multiple elements with the same class -->
+    <h2>Multiple Elements with Same Class</h2>
+    <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+    </div>
+    <div class="city">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <!-- Using class on inline elements -->
+    <h2>Class on Inline Elements</h2>
+    <h3>My <span class="note">Important</span> Heading</h3>
+    <p>This is some <span class="note">important</span> text.</p>
+
+    <!-- Multiple classes on one element -->
+    <h2>Multiple Classes</h2>
+    <div class="city main">
+        <h2>New York</h2>
+        <p>New York is a city in the United States.</p>
+    </div>
+
+    <!-- Different elements sharing the same class -->
+    <h2>Different Elements Sharing Class</h2>
+    <h3 class="city">Berlin</h3>
+    <p class="city">Berlin is the capital of Germany.</p>
+
+    <!-- Using classes with JavaScript -->
+    <h2>Using Classes with JavaScript</h2>
+    <button onclick="hideElements()">Hide all cities</button>
+
+    <script>
+        // JavaScript to hide elements with a specific class
+        function hideElements() {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

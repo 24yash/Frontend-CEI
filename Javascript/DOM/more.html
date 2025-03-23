@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript DOM HTML, Forms, and CSS</title>
+    <style>
+      .styled {
+        color: white;
+        background-color: green;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- DOM HTML -->
+    <h1 id="title">DOM HTML Example</h1>
+    <p id="description">This is a description paragraph.</p>
+
+    <!-- DOM Forms -->
+    <form id="myForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <button type="button" id="submitBtn">Submit</button>
+      <p id="formOutput"></p>
+    </form>
+
+    <!-- DOM CSS -->
+    <div id="cssExample">This div will be styled dynamically.</div>
+
+    <!-- Script -->
+    <script>
+      // DOM HTML: Access and modify HTML elements
+      document.getElementById("title").innerHTML = "Updated DOM HTML Example"; // Change heading text
+      document.getElementById("description").style.color = "blue"; // Change paragraph text color
+
+      // DOM Forms: Interact with form elements
+      document
+        .getElementById("submitBtn")
+        .addEventListener("click", function () {
+          const nameValue = document.getElementById("name").value; // Get input value
+          document.getElementById(
+            "formOutput"
+          ).innerHTML = `Hello, ${nameValue}!`; // Display input value
+        });
+
+      // DOM CSS: Dynamically apply styles to elements
+      const cssDiv = document.getElementById("cssExample");
+      cssDiv.classList.add("styled"); // Add a predefined CSS class
+      cssDiv.style.border = "2px solid black"; // Add inline styles dynamically
+    </script>
+  </body>
+</html>

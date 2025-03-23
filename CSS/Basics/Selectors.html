@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Tutorial</title>
+    <style>
+        /* Universal Selector - affects all elements */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Element Selector - styles all <h1> elements */
+        h1 {
+            color: #2c3e50;
+            margin: 20px 0;
+        }
+
+        /* Class Selector - styles elements with class="highlight" */
+        .highlight {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        /* ID Selector - unique style for element with id="main-heading" */
+        #main-heading {
+            font-size: 2.5em;
+            text-align: center;
+            color: #2980b9;
+        }
+
+        /* Grouping Selector - styles multiple elements */
+        h2, h3, .subtitle {
+            color: #27ae60;
+            margin: 15px 0;
+        }
+
+        /* Element-specific Class Selector - only styles <p> with class="special" */
+        p.special {
+            font-style: italic;
+            color: #c0392b;
+            border-left: 3px solid #3498db;
+            padding-left: 10px;
+        }
+
+        /* Multiple Classes - element with both "center" and "large" classes */
+        .center {
+            text-align: center;
+        }
+        .large {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-heading">CSS Selectors Demonstration</h1>
+    
+    <div class="highlight">
+        <h2>Element Selector Example</h2>
+        <p>This paragraph is styled using element selectors</p>
+    </div>
+
+    <h3 class="subtitle">Grouping Selector Example</h3>
+    
+    <p class="special">This uses element-specific class selector</p>
+    
+    <p class="center large">This paragraph uses multiple classes</p>
+</body>
+</html>

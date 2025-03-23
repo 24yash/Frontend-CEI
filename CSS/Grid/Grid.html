@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Tutorial</title>
+    <style>
+      /* Grid Intro */
+      .intro-container {
+        display: grid; /* Enables grid layout */
+        grid-template-columns: repeat(
+          3,
+          1fr
+        ); /* Creates 3 equal-width columns */
+        gap: 10px; /* Adds gap between grid items */
+      }
+      .intro-item {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Grid Columns/Rows */
+      .columns-rows-container {
+        display: grid;
+        grid-template-columns: 100px 200px auto;
+        grid-template-rows: 50px 100px;
+        gap: 10px 20px;
+      }
+
+      .columns-rows-item {
+        background-color: #3498db;
+        color: white;
+        padding: 10px;
+      }
+
+      /* Grid Container */
+      .container {
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "menu main right"
+          "footer footer footer";
+        gap: 10px;
+      }
+
+      .container > div {
+        background-color: #2ecc71;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .header {
+        grid-area: header;
+      }
+      .menu {
+        grid-area: menu;
+      }
+      .main {
+        grid-area: main;
+      }
+      .right {
+        grid-area: right;
+      }
+      .footer {
+        grid-area: footer;
+      }
+
+      /* Grid Item */
+      .item-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      .item {
+        background-color: #e74c3c;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .span-2-columns {
+        grid-column: span 2; /* Item spans 2 columns */
+      }
+
+      .span-2-rows {
+        grid-row: span 2; /* Item spans 2 rows */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Grid Tutorial</h1>
+    <h2>Grid Intro</h2>
+    <div class="intro-container">
+      <div class="intro-item">Item 1</div>
+      <div class="intro-item">Item 2</div>
+      <div class="intro-item">Item 3</div>
+    </div>
+    <h2>Grid Columns/Rows</h2>
+    <div class="columns-rows-container">
+      <div class="columns-rows-item">1</div>
+      <div class="columns-rows-item">2</div>
+      <div class="columns-rows-item">3</div>
+      <div class="columns-rows-item">4</div>
+      <div class="columns-rows-item">5</div>
+      <div class="columns-rows-item">6</div>
+    </div>
+    <h2>Grid Container</h2>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="menu">Menu</div>
+      <div class="main">Main</div>
+      <div class="right">Right</div>
+      <div class="footer">Footer</div>
+    </div>
+    <h2>Grid Item</h2>
+    <div class="item-container">
+      <div class="item span-2-columns">Span 2 Columns</div>
+      <div class="item">3</div>
+      <div class="item span-2-rows">Span 2 Rows</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+  </body>
+</html>

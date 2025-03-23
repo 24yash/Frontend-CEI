@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dimensions Tutorial</title>
+    <style>
+        /* Basic height and width */
+        .basic-dimensions {
+            height: 200px;
+            width: 50%;
+            background-color: powderblue;
+            margin-bottom: 20px;
+        }
+
+        /* Fixed dimensions */
+        .fixed-dimensions {
+            height: 100px;
+            width: 500px;
+            background-color: lightgreen;
+            margin-bottom: 20px;
+        }
+
+        /* Max-width example */
+        .max-width-example {
+            max-width: 500px;
+            height: 100px;
+            background-color: lightsalmon;
+            margin-bottom: 20px;
+        }
+
+        /* Min and max dimensions */
+        .min-max-dimensions {
+            min-width: 200px;
+            max-width: 600px;
+            min-height: 100px;
+            max-height: 300px;
+            background-color: lightblue;
+            margin-bottom: 20px;
+        }
+
+        /* Percentage-based dimensions for images */
+        .image-container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .responsive-image {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Dimensions Tutorial</h1>
+
+    <h2>Basic Height and Width</h2>
+    <div class="basic-dimensions">
+        This div has a height of 200px and a width of 50%.
+    </div>
+
+    <h2>Fixed Dimensions</h2>
+    <div class="fixed-dimensions">
+        This div has a fixed height of 100px and width of 500px.
+    </div>
+
+    <h2>Max-width Example</h2>
+    <div class="max-width-example">
+        This div has a max-width of 500px and height of 100px.
+    </div>
+
+    <h2>Min and Max Dimensions</h2>
+    <div class="min-max-dimensions">
+        This div has min-width: 200px, max-width: 600px, min-height: 100px, and max-height: 300px.
+    </div>
+
+    <h2>Responsive Image</h2>
+    <div class="image-container">
+        <img src="https://via.placeholder.com/800x400" alt="Responsive Image" class="responsive-image">
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Margins Tutorial</title>
+    <style>
+        /* Basic margin setup */
+        .margin-demo {
+            border: 2px solid #2c3e50;
+            background-color: #ecf0f1;
+            padding: 10px;
+        }
+
+        /* Individual margin properties */
+        .individual-margins {
+            margin-top: 50px;
+            margin-right: 30px;
+            margin-bottom: 70px;
+            margin-left: 20px;
+        }
+
+        /* Shorthand margin syntax */
+        .shorthand-4 { margin: 25px 50px 75px 100px; }
+        .shorthand-3 { margin: 25px 50px 75px; }
+        .shorthand-2 { margin: 25px 50px; }
+        .shorthand-1 { margin: 25px; }
+
+        /* Auto margin for centering */
+        .center-box {
+            width: 300px;
+            margin: 0 auto;
+            border: 2px solid #e74c3c;
+        }
+
+        /* Margin inheritance */
+        .parent-box {
+            margin-left: 100px;
+            border: 1px solid #3498db;
+        }
+        .child-inherit {
+            margin-left: inherit;
+        }
+
+        /* Margin collapse demonstration */
+        .collapse-parent {
+            background-color: #fff3cd;
+        }
+        .collapse-box1 {
+            margin-bottom: 50px;
+            background-color: #d4e6f1;
+        }
+        .collapse-box2 {
+            margin-top: 20px;
+            background-color: #fadbd8;
+        }
+    </style>
+</head>
+<body>
+    <!-- Individual margin example -->
+    <div class="margin-demo individual-margins">
+        Individual margin values applied
+    </div>
+
+    <!-- Shorthand examples -->
+    <div class="margin-demo shorthand-4">4-value shorthand</div>
+    <div class="margin-demo shorthand-3">3-value shorthand</div>
+    <div class="margin-demo shorthand-2">2-value shorthand</div>
+    <div class="margin-demo shorthand-1">1-value shorthand</div>
+
+    <!-- Auto centering -->
+    <div class="center-box">
+        Horizontally centered with margin: auto
+    </div>
+
+    <!-- Inheritance example -->
+    <div class="parent-box">
+        <div class="child-inherit">
+            Inherited left margin from parent
+        </div>
+    </div>
+
+    <!-- Margin collapse demonstration -->
+    <div class="collapse-parent">
+        <div class="collapse-box1">Bottom margin: 50px</div>
+        <div class="collapse-box2">Top margin: 20px</div>
+    </div>
+</body>
+</html>

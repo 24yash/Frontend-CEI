@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Alignment Tutorial</title>
+    <style>
+        /* Center Align Elements */
+        .center-block {
+            margin: auto;
+            width: 50%;
+            border: 3px solid green;
+            padding: 10px;
+        }
+
+        /* Center Align Text */
+        .center-text {
+            text-align: center;
+            border: 3px solid green;
+        }
+
+        /* Center an Image */
+        .center-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+
+        /* Left and Right Align - Using position */
+        .right-position {
+            position: absolute;
+            right: 0px;
+            width: 300px;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+
+        /* Left and Right Align - Using float */
+        .right-float {
+            float: right;
+            width: 300px;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+
+        /* Clearfix Hack */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Center Vertically - Using padding */
+        .center-padding {
+            padding: 70px 0;
+            border: 3px solid green;
+            text-align: center;
+        }
+
+        /* Center Vertically - Using line-height */
+        .center-line-height {
+            line-height: 200px;
+            height: 200px;
+            border: 3px solid green;
+            text-align: center;
+        }
+
+        /* Center Vertically - Using position & transform */
+        .center-transform {
+            height: 200px;
+            position: relative;
+            border: 3px solid green;
+        }
+        .center-transform p {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Center Vertically - Using Flexbox */
+        .center-flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            border: 3px solid green;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Alignment Tutorial</h1>
+
+    <h2>Center Align Elements</h2>
+    <div class="center-block">This div element is centered.</div>
+
+    <h2>Center Align Text</h2>
+    <div class="center-text">This text is centered.</div>
+
+    <h2>Center an Image</h2>
+    <img src="example.jpg" alt="Centered Image" class="center-image">
+
+    <h2>Left and Right Align - Using position</h2>
+    <div class="right-position">This div is positioned to the right.</div>
+
+    <h2>Left and Right Align - Using float</h2>
+    <div class="clearfix">
+        <div class="right-float">This div is floated to the right.</div>
+    </div>
+
+    <h2>Center Vertically - Using padding</h2>
+    <div class="center-padding">I am vertically and horizontally centered.</div>
+
+    <h2>Center Vertically - Using line-height</h2>
+    <div class="center-line-height">I am vertically and horizontally centered.</div>
+
+    <h2>Center Vertically - Using position & transform</h2>
+    <div class="center-transform">
+        <p>I am vertically and horizontally centered.</p>
+    </div>
+
+    <h2>Center Vertically - Using Flexbox</h2>
+    <div class="center-flex">I am vertically and horizontally centered.</div>
+</body>
+</html>
